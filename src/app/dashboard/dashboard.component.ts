@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Friend } from '../shared/models';
+import { summerFriends } from '../shared/data';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  friends:Array<Friend>;
+  title = 'summerfriends';
 
-  constructor() { }
+  constructor() {
+    this.friends = summerFriends
+   }
 
   ngOnInit() {
   }
