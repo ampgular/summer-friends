@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "link": "npm link @ampgular/seo && npm link @ampgular/amp && npm link @ampgular/cli & npm link @ampgular/common"
   },
   "private": true,
   "dependencies": {
@@ -18,10 +19,13 @@
     "@angular/forms": "~8.0.0-rc.2",
     "@angular/platform-browser": "~8.0.0-rc.2",
     "@angular/platform-browser-dynamic": "~8.0.0-rc.2",
+    "@angular/platform-server": "~8.0.0-rc.2",
     "@angular/router": "~8.0.0-rc.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.0"
+    "zone.js": "~0.9.0",
+    "@nguniversal/module-map-ngfactory-loader": "^7.1.1",
+    "@nguniversal/express-engine": "^7.1.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.800.0-rc.2",

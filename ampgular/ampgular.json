@@ -1,0 +1,68 @@
+{
+  "$schema": "../node_modules/@ampgular/cli/lib/config/schema.json",
+  "version": 1,
+  "target": "node",
+  "host": "https://www.myhost.com",
+  "amp": {
+    "ampValidation": true,
+    "cssOptimize": true,
+    "serviceWorker": true,
+    "stateFiles": [
+      "/ampgular/amp/main_state_config.json"
+    ],
+    "dynamicFiles": [
+      "/ampgular/amp/main_dynamic_config.json"
+    ],
+    "pluginsFiles": [
+      "/ampgular/amp/plugins_config.json"
+    ],
+    "mode": "render",
+    "prerender": false
+  },
+  "buildConfig": {
+    "configuration": "seo",
+    "build": false
+  },
+  "renderConfig": {
+    "node": {
+      "webpack": false,
+      "localhost": false
+    }
+  },
+  "deploy": {
+    "targetApp": "prerender",
+    "amp": false,
+    "sitemap": true,
+    "robots": true,
+    "files": []
+  },
+  "prerender": {
+    "cssOptimize": true,
+    "namedFiles": false
+  },
+  "spider": {
+    "entryPaths": [
+      "/"
+    ],
+    "excludePaths": [
+      ""
+    ],
+    "includePaths": [
+      ""
+    ],
+    "ensureCanonical": true,
+    "excludeQuery": true,
+    "dryRun": false
+  },
+  "sitemap": {
+    "defaultPriority": 0.8,
+    "defaultFrecuency": "weekly",
+    "custom": [
+      {
+        "urls": [],
+        "frecuency": "daily",
+        "priority": 1
+      }
+    ]
+  }
+}
